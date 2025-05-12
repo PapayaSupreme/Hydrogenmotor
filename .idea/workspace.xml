@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2301f2e-afef-4990-aaf8-b726a9503d67" name="Changes" comment="" />
+    <list default="true" id="f2301f2e-afef-4990-aaf8-b726a9503d67" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/calculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -62,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747050053060</updated>
-      <workItem from="1747050054206" duration="1067000" />
+      <workItem from="1747050054206" duration="2701000" />
     </task>
     <servers />
   </component>

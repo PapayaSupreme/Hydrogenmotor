@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrogen Use Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/calculator.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Hydrogen Motor Project</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="motor.html">Interactive Schema</a>
+    <a href="form.html">Why switch ?</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Estimate Your Hydrogen Consumption</h2>
+  <form id="hydrogenForm">
+    <label for="distance">How many kilometers do you drive per week?</label><br>
+    <input type="number" id="distance" name="distance" required><br><br>
+
+    <label for="efficiency">Select your vehicle type:</label><br>
+    <select id="efficiency" name="efficiency">
+      <option value="1">Compact Car (1 kg H₂ / 100 km)</option>
+      <option value="1.2">Sedan (1.2 kg H₂ / 100 km)</option>
+      <option value="1.5">SUV (1.5 kg H₂ / 100 km)</option>
+    </select><br><br>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result" style="margin-top: 1em; font-weight: bold;"></div>
+</main>
+
+<footer>
+  <nav>
+    <a href="about.html">About Us</a>
+  </nav>
+</footer>
+</body>
+</html>
