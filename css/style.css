@@ -2,9 +2,36 @@ body {
     font-family: 'Rajdhani', 'Segoe UI', 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 80px;
 }
 
-header, footer {
+header{
+    background-color: #004d4d;
+    color: white;
+    padding: 1rem 2rem;
+    padding-right: 28rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer {
     background-color: #004d4d;
     color: white;
     padding: 1em;
