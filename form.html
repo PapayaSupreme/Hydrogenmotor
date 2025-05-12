@@ -19,20 +19,33 @@
 </header>
 
 <main>
-  <h2>Estimate Your Hydrogen Consumption</h2>
-  <form id="hydrogenForm">
-    <label for="distance">How many kilometers do you drive per week?</label><br>
-    <input type="number" id="distance" name="distance" required><br><br>
+  <h2>Petrol vs Hydrogen: Estimate Your Consumption</h2>
+  <form id="quizForm">
+    <label>Do you use your car to go to work? </label><br>
+    <select name="workUse" class="dropdown-select">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select><br><br>
 
-    <label for="efficiency">Select your vehicle type:</label><br>
-    <select id="efficiency" name="efficiency">
+    <label>Roughly how many kilometers do you drive per week?</label><br>
+    <input type="number" name="weeklyKm" class="number-input" required><br><br>
+
+    <label>How many times per month do you fill up your tank?</label><br>
+    <input type="number" name="refillTimes" class="number-input" required><br><br>
+
+    <label>What is the average distance you drive on one tank? (in km)</label><br>
+    <input type="number" name="tankRange" class="number-input" required><br><br>
+
+    <label>What type of car do you use?</label><br>
+    <select name="carType" class="dropdown-select">
       <option value="1">Compact Car (1 kg H₂ / 100 km)</option>
       <option value="1.2">Sedan (1.2 kg H₂ / 100 km)</option>
       <option value="1.5">SUV (1.5 kg H₂ / 100 km)</option>
     </select><br><br>
 
-    <button type="submit">Calculate</button>
+    <button type="submit">Compare Consumption</button>
   </form>
+
 
   <div id="result" style="margin-top: 1em; font-weight: bold;"></div>
 </main>
