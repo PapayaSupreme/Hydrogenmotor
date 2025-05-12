@@ -35,3 +35,21 @@ ul {
 body {
     font-family: 'BurbankBig', sans-serif;
 }
+
+.engine-image {
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .zone {
+    fill: transparent;
+    stroke: red;
+    stroke-width: 2;
+    cursor: pointer;
+  }
+  
+  .zone:hover {
+    fill: rgba(255, 0, 0, 0.2);
+  }
