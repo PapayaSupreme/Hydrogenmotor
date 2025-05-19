@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hydrogen Use Calculator</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/calculator.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrogen Use Calculator</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/calculator.js" defer></script>
 </head>
 <body>
 <header>
-  <h1>Hydrogen Motor Project</h1>
-  <nav>
-    <a href="home.html">Home</a>
-    <a href="motor.html">Usage example</a>
-    <a href="form.html">Why switch ?</a>
-    <a href="about.html">About</a>
-  </nav>
+    <h1>Hydrogen Motor Project</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="motor.html">Usage example</a>
+        <a href="form.html">Why switch ?</a>
+        <a href="about.html">About</a>
+    </nav>
 </header>
 
 <main>
-  <h2>Petrol vs Hydrogen: Estimate Your Consumption</h2>
-  <form id="quizForm">
-    <label>Do you use your car to go to work? </label><br>
-    <select name="workUse" class="dropdown-select">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select><br><br>
+    <h2>Petrol vs Hydrogen: Estimate Your Consumption</h2>
+    <form id="quizForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label>Do you use your car to go to work?</label>
+                <select name="workUse" class="dropdown-select">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Roughly how many kilometers do you drive per week?</label>
+                <input type="number" name="weeklyKm" class="number-input" required>
+            </div>
+        </div>
 
-    <label>Roughly how many kilometers do you drive per week?</label><br>
-    <input type="number" name="weeklyKm" class="number-input" required><br><br>
+        <div class="form-row">
+            <div class="form-group">
+                <label>How many times per month do you fill up your tank?</label>
+                <input type="number" name="refillTimes" class="number-input" required>
+            </div>
+            <div class="form-group">
+                <label>What is the average distance you drive on one tank? (in km)</label>
+                <input type="number" name="tankRange" class="number-input" required>
+            </div>
+        </div>
 
-    <label>How many times per month do you fill up your tank?</label><br>
-    <input type="number" name="refillTimes" class="number-input" required><br><br>
+        <!-- Last dropdown alone on its line and centered -->
+        <div class="form-group full-width centered">
+            <label>What type of car do you use?</label>
+            <select name="carType" class="dropdown-select", id="typeofcar">
+                <option value="1">Compact Car (1 kg H₂ / 100 km)</option>
+                <option value="1.2">Sedan (1.2 kg H₂ / 100 km)</option>
+                <option value="1.5">SUV (1.5 kg H₂ / 100 km)</option>
+            </select>
+        </div>
 
-    <label>What is the average distance you drive on one tank? (in km)</label><br>
-    <input type="number" name="tankRange" class="number-input" required><br><br>
+        <!-- Submit button on its own line -->
+        <div class="form-group full-width centered">
+            <button type="submit">Compare Consumption</button>
+        </div>
 
-    <label>What type of car do you use?</label><br>
-    <select name="carType" class="dropdown-select">
-      <option value="1">Compact Car (1 kg H₂ / 100 km)</option>
-      <option value="1.2">Sedan (1.2 kg H₂ / 100 km)</option>
-      <option value="1.5">SUV (1.5 kg H₂ / 100 km)</option>
-    </select><br><br>
-
-    <button type="submit">Compare Consumption</button>
-  </form>
+    </form>
 
 
-  <div id="result" style="margin-top: 1em; font-weight: bold;"></div>
+    <div id="result" style="margin-top: 1.5em; font-weight: bold; text-align:center;"></div>
 </main>
 
 <footer>
-  <nav>
-    <a href="about.html">About Us</a>
-  </nav>
+    <nav>
+        <a href="about.html">About Us</a>
+    </nav>
 </footer>
 </body>
 </html>

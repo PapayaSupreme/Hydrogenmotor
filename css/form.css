@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Rajdhani', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaf6fb;
+}
+
+header {
+    background-color: #82cfff;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #002933;
+}
+
+header nav a {
+    color: #003333;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #74c6f1;
+    color: #003333;
+    padding: 1rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+nav a {
+    color: #003333;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-input, .dropdown-select {
+    width: 180px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #80d0ff;
+    border-radius: 8px;
+    background-color: #e9f7ff;
+    color: #003333;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#typeofcar{
+    width : 340px
+}
+
+.number-input:focus, .dropdown-select:focus {
+    border-color: #58bce6;
+    box-shadow: 0 0 5px rgba(88, 188, 230, 0.5);
+    outline: none;
+}
+ul {
+    line-height: 1.6;
+}
+
+
+
+.engine-image {
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .zone {
+    fill: transparent;
+    stroke: red;
+    stroke-width: 2;
+    cursor: pointer;
+  }
+  
+  .zone:hover {
+    fill: rgba(255, 0, 0, 0.2);
+  }
+
+
+#hyundai{background-color: blue}
+
+.classemere {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 2rem 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+button[type="submit"] {
+    background-color: #80d0ff;
+    color: #003333;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #58bce6;
+}
+
+form label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.form-row,
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.full-width {
+    grid-column: 1 / span 2;
+    align-items: center;
+    text-align: center;
+}
+
+.form-row.single {
+    justify-content: center;
+}
+
+

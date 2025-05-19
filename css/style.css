@@ -3,9 +3,10 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 80px;
+    background-color: #f9f9f9;
 }
 
-header{
+header {
     background-color: #004d4d;
     color: white;
     padding: 1rem 2rem;
@@ -19,6 +20,7 @@ header{
     justify-content: space-between;
     z-index: 999;
 }
+
 header h1 {
     margin: 0;
     font-size: 1.5rem;
@@ -38,6 +40,12 @@ footer {
     text-align: center;
 }
 
+footer nav a,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
 nav a {
     color: white;
     margin: 0 1em;
@@ -52,35 +60,7 @@ ul {
     line-height: 1.6;
 }
 
-
-
-.engine-image {
-    margin-top: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .zone {
-    fill: transparent;
-    stroke: red;
-    stroke-width: 2;
-    cursor: pointer;
-  }
-  
-  .zone:hover {
-    fill: rgba(255, 0, 0, 0.2);
-  }
-.number-input {
-    width: 250px;
-    padding: 8px;
-    font-size: 1rem;
-    border: 2px solid #004d4d;
-    border-radius: 6px;
-    background-color: #f0faff;
-    color: #003333;
-}
-
+.number-input,
 .dropdown-select {
     width: 260px;
     padding: 8px;
@@ -89,4 +69,58 @@ ul {
     border-radius: 6px;
     background-color: #e0f4ff;
     color: #003333;
+    margin-bottom: 1em;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #004d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #006666;
+}
+
+.engine-image {
+    margin-top: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zone {
+    fill: transparent;
+    stroke: red;
+    stroke-width: 2;
+    cursor: pointer;
+}
+
+.zone:hover {
+    fill: rgba(255, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 2rem;
+    }
+
+    header nav a {
+        margin: 0.5em 0;
+    }
+
+    .engine-image {
+        width: 100%;
+    }
+
+    .number-input,
+    .dropdown-select {
+        width: 100%;
+    }
 }
