@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 80px;
-    background-color: #f9f9f9;
+    background-color: #eaf6fb; 
 }
 
 header {
-    background-color: #004d4d;
-    color: white;
+    background-color: #82cfff;
+    color: #003333;
     padding: 1rem 2rem;
     padding-right: 28rem;
     position: fixed;
@@ -22,32 +22,33 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin: 0;  
     font-size: 1.5rem;
+    color: #002933; 
 }
 
 header nav a {
-    color: white;
+    color: #003333; 
     margin-left: 2rem;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600; 
 }
 
 footer {
-    background-color: #004d4d;
-    color: white;
+    background-color: #74c6f1; 
+    color: #003333;
     padding: 1em;
     text-align: center;
 }
 
 footer nav a,
 footer a {
-    color: white;
+    color: #003333;
     text-decoration: none;
 }
 
 nav a {
-    color: white;
+    color: #003333; 
     margin: 0 1em;
     text-decoration: none;
 }
@@ -65,9 +66,9 @@ ul {
     width: 260px;
     padding: 8px;
     font-size: 1rem;
-    border: 2px solid #004d4d;
+    border: 2px solid #80d0ff; 
     border-radius: 6px;
-    background-color: #e0f4ff;
+    background-color: #e9f7ff; 
     color: #003333;
     margin-bottom: 1em;
 }
@@ -75,20 +76,21 @@ ul {
 button[type="submit"] {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #004d4d;
-    color: white;
+    background-color: #80d0ff; 
+    color: #003333; 
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #006666;
+    background-color: #58bce6; 
 }
 
 .engine-image {
     margin-top: 20px;
     max-width: 1000px;
+    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -123,4 +125,80 @@ button[type="submit"]:hover {
     .dropdown-select {
         width: 100%;
     }
+}
+
+/* --- Animation voiture --- */
+.background-car {
+    position: absolute;
+    bottom: 50px;
+    right: -200px;
+    width: 100px;
+    height: auto;
+    z-index: 0;
+    animation: drive 20s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes drive {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 110%;
+    }
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* js card for pile.html */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border: 2px solid #80d0ff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    color: #003333;
+    margin-bottom: 0.5rem;
+}
+
+.info-card button {
+    margin-top: 1rem;
+    background-color: #80d0ff;
+    color: #003333;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info-card button:hover {
+    background-color: #58bce6;
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 1rem;
+    color: #003333;
 }
