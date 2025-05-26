@@ -166,4 +166,8 @@ form label {
     justify-content: center;
 }
 
+#chat-messages div:first-child {
+    font-style: italic;
+    color: #444;
+}
 

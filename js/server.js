@@ -37,6 +37,7 @@ app.post('/chat', async (req, res) => {
         console.error('❌ OpenRouter error:', error.response?.data || error.message);
         res.status(500).json({ error: 'Qwen model request failed.' });
     }
+
 });
 
 app.listen(port, () => {

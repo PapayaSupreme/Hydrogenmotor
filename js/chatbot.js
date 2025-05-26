@@ -1,3 +1,11 @@
+function displayBotMessage(text) {
+    const chat = document.getElementById("chat-messages");
+    const botMsg = document.createElement("div");
+    botMsg.innerHTML = `<span>🤖 ${text}</span>`;
+    chat.appendChild(botMsg);
+    chat.scrollTop = chat.scrollHeight;
+}
+
 function sendMessage() {
     const input = document.getElementById("user-input");
     const chat = document.getElementById("chat-messages");
