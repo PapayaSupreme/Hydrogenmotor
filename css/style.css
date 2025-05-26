@@ -240,3 +240,45 @@ body {
 .dropzone.hovered {
   background-color: #d1f3ff;
 }
+
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 500px;
+    z-index: 999;
+    font-family: sans-serif;
+}
+
+#chatbox {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* or max-height */
+    width: 300px;
+    overflow: hidden;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+#user-input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
