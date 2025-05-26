@@ -1,10 +1,3 @@
-
-function toggleCard(id) {
-  const section = document.getElementById(id);
-  section.style.display = section.style.display === 'block' ? 'none' : 'block';
-}
-
-// --- Drag & Drop ---
 const draggables = document.querySelectorAll('.draggable');
 const dropzones = document.querySelectorAll('.dropzone');
 const resultMessage = document.getElementById('result-message');
@@ -28,14 +21,23 @@ dropzones.forEach(zone => {
   zone.addEventListener('drop', (e) => {
     e.preventDefault();
     zone.classList.remove('hovered');
+
     const droppedId = e.dataTransfer.getData('text/plain');
     const correctId = zone.dataset.correct;
     const droppedElement = document.getElementById(droppedId);
 
-    // empêcher plusieurs dépôts
+    // Évite de déposer dans une zone déjà remplie
     if (zone.querySelector('.draggable')) return;
 
-    zone.appendChild(droppedElement);
+    if (droppedId === correctId) {
+      zone.appendChild(droppedElement);
+    } else {
+      // mauvaise correspondance → vibration
+      zone.classList.add('shake');
+      setTimeout(() => {
+        zone.classList.remove('shake');
+      }, 400);
+    }
 
     checkAllMatched();
   });

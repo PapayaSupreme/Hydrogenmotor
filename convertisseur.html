@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convertisseur DC/DC</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/convertisseur.css" />
+  <script>
+    function toggleDetails() {
+      const el = document.querySelector('.more-info');
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Convertisseur DC/DC</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="motor.html">Usage exemple</a>
+    <a href="form.html">Why switch ?</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <section class="converter-section">
+    <h2>🔌 Quel est le rôle du convertisseur DC/DC&nbsp;?</h2>
+    <p>
+      Dans un système à pile à combustible, l'électricité produite est en courant continu (DC), mais sa tension n'est pas toujours adaptée aux composants du véhicule (moteur, batterie, électronique de bord).
+    </p>
+
+    <div class="converter-highlight">
+      Le convertisseur DC/DC permet d’ajuster cette tension pour la rendre compatible avec tous les éléments du système.
+    </div>
+
+    <p>
+      Ce composant joue un rôle essentiel pour :
+    </p>
+    <ul style="text-align: left; margin-top: 1rem;">
+      <li>✅ Stabiliser l’alimentation électrique</li>
+      <li>✅ Alimenter les moteurs électriques et les systèmes auxiliaires</li>
+      <li>✅ Optimiser le rendement global</li>
+    </ul>
+
+    <button class="show-button" onclick="toggleDetails()">+ En savoir plus</button>
+
+    <div class="more-info">
+      <p>
+        Il existe différents types de convertisseurs DC/DC : buck (abaisse la tension), boost (l’élève), ou buck-boost (fait les deux selon les besoins).
+      </p>
+      <p>
+        Dans les voitures à hydrogène, le convertisseur est indispensable pour équilibrer l'énergie entre la pile, la batterie tampon et les moteurs.
+      </p>
+    </div>
+
+    <a href="motor.html" style="display:inline-block;margin-top:2rem;color:#003333;">⬅ Retour au moteur</a>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 – Projet Hydrogène | <a href="about.html">À propos</a></p>
+</footer>
+
+</body>
+</html>
