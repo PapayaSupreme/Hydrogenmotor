@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humidificateur</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reformeur.css" />
+    <script>
+        function toggleReformeur() {
+            const content = document.querySelector('.more-info');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+<div class="page-container">
+    <header>
+        <h1>Humidificateur</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="motor.html">Usage exemple</a>
+            <a href="form.html">Why switch ?</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="reformeur-section">
+            <h2>💧 Qu'est-ce qu’un humidificateur&nbsp;?</h2>
+            <p>
+                L’humidificateur est un composant essentiel d’un système à pile à combustible. Il permet de maintenir un taux d’humidité optimal dans les membranes échangeuses de protons afin d’assurer leur conductivité et leur longévité.
+            </p>
+
+            <div class="reformeur-highlight">
+                L’humidificateur transfère l’humidité de l’air sortant (chargé en vapeur d’eau) vers l’air entrant sec, sans nécessiter d’apport d’énergie externe.
+            </div>
+
+            <p>
+                Ce processus permet de stabiliser les performances de la pile à combustible tout en évitant le dessèchement de ses composants internes.
+            </p>
+
+            <ul style="text-align: left; margin-top: 1rem;">
+                <li>✅ Améliore la durée de vie et l’efficacité de la pile</li>
+                <li>✅ Fonctionne sans énergie externe grâce à l’échange thermique</li>
+                <li>⚠️ Doit être bien dimensionné pour éviter la saturation ou le sous-humidification</li>
+            </ul>
+
+            <button class="show-button" onclick="toggleReformeur()">+ En savoir plus</button>
+
+            <div class="more-info">
+                <p>
+                    Les humidificateurs utilisent souvent des membranes échangeuses d’humidité ou des surfaces poreuses permettant un échange thermique et hygrométrique entre l’air humide sortant et l’air sec entrant.
+                </p>
+                <p>
+                    Une humidification bien maîtrisée est essentielle pour garantir la conductivité ionique de la membrane et assurer un fonctionnement optimal du système.
+                </p>
+            </div>
+
+            <a href="motor.html" style="display:inline-block;margin-top:2rem;color:#003333;">⬅ Retour au moteur</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 – Projet Hydrogène | <a href="about.html">À propos</a></p>
+    </footer>
+</div>
+</body>
+</html>
