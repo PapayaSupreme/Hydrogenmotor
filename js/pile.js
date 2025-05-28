@@ -23,13 +23,14 @@ dropzones.forEach(zone => {
     zone.classList.remove('hovered');
 
     const droppedId = e.dataTransfer.getData('text/plain');
+    const cleanId = droppedId.replace(/drag$/, '');
     const correctId = zone.dataset.correct;
     const droppedElement = document.getElementById(droppedId);
 
     // Évite de déposer dans une zone déjà remplie
     if (zone.querySelector('.draggable')) return;
 
-    if (droppedId === correctId) {
+    if (correctId === cleanId) {
       zone.appendChild(droppedElement);
     } else {
       // mauvaise correspondance → vibration

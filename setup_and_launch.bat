@@ -39,7 +39,7 @@ timeout /t 2 >nul
 
 REM === Open frontend ===
 echo 🌐 Opening chatbot UI...
-start "" "home.html"
+start "" "%CD%\html\home.html"
 
 echo 🟢 Everything ready.
 exit /b

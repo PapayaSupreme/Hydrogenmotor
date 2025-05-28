@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pile à Combustible</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="../js/pile.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pile à Combustible</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/pile.js" defer></script>
 </head>
 <body>
 
 <header>
-  <h1>Pile à combustible</h1>
-  <nav>
-    <a href="home.html">Home</a>
-    <a href="motor.html">Usage exemple</a>
-    <a href="form.html">Why switch ?</a>
-    <a href="about.html">About</a>
-  </nav>
+    <h1>Pile à combustible</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="motor.html">Usage exemple</a>
+        <a href="form.html">Why switch ?</a>
+        <a href="about.html">About</a>
+    </nav>
 </header>
 
 <main>
-  <h2>Comment fonctionne une pile à combustible&nbsp;?</h2>
-  <p>Voici les composants essentiels :</p>
+    <h2>Comment fonctionne une pile à combustible&nbsp;?</h2>
+    <p>Voici les composants essentiels :</p>
 
-  <div class="card-container">
-    <div class="info-card">
-      <h3>Anode</h3>
-      <p>L'hydrogène (H₂) est séparé en protons et électrons.</p>
-      <button onclick="toggleCard('anode')">En savoir plus</button>
-      <div class="hidden-text" id="anode">
-        <p>Les électrons passent dans un circuit externe (créant de l’électricité), tandis que les protons passent à travers l’électrolyte.</p>
-      </div>
+    <div class="card-container">
+        <div class="info-card">
+            <h3>Anode</h3>
+            <p>L'hydrogène (H₂) est séparé en protons et électrons.</p>
+            <button onclick="toggleCard('anode')">En savoir plus</button>
+            <div class="hidden-text" id="anode">
+                <p>Les électrons passent dans un circuit externe (créant de l’électricité), tandis que les protons
+                    passent à travers l’électrolyte.</p>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>Électrolyte</h3>
+            <p>Il laisse passer uniquement les protons H⁺ vers la cathode.</p>
+            <button onclick="toggleCard('electrolyte')">En savoir plus</button>
+            <div class="hidden-text" id="electrolyte">
+                <p>Ce matériau sélectif empêche les électrons de passer et garantit la bonne séparation des charges.</p>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>Cathode</h3>
+            <p>L’oxygène (O₂) réagit avec les protons et les électrons.</p>
+            <button onclick="toggleCard('cathode')">En savoir plus</button>
+            <div class="hidden-text" id="cathode">
+                <p>La réaction produit de l’eau (H₂O) et de la chaleur — ce sont les seuls "rejets" de la pile à
+                    combustible.</p>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>Avantages</h3>
+            <p>Silencieuse, propre, haut rendement.</p>
+            <button onclick="toggleCard('avantages')">En savoir plus</button>
+            <div class="hidden-text" id="avantages">
+                <p>Les piles à combustible ne rejettent que de la vapeur d’eau et offrent un rendement supérieur à un
+                    moteur thermique.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="info-card">
-      <h3>Électrolyte</h3>
-      <p>Il laisse passer uniquement les protons H⁺ vers la cathode.</p>
-      <button onclick="toggleCard('electrolyte')">En savoir plus</button>
-      <div class="hidden-text" id="electrolyte">
-        <p>Ce matériau sélectif empêche les électrons de passer et garantit la bonne séparation des charges.</p>
-      </div>
-    </div>
+    <section style="margin-top: 3rem;">
+        <h3>🧩 Associe les composants à leur description</h3>
+        <p>Fais glisser chaque élément à gauche vers la bonne description à droite.</p>
 
-    <div class="info-card">
-      <h3>Cathode</h3>
-      <p>L’oxygène (O₂) réagit avec les protons et les électrons.</p>
-      <button onclick="toggleCard('cathode')">En savoir plus</button>
-      <div class="hidden-text" id="cathode">
-        <p>La réaction produit de l’eau (H₂O) et de la chaleur — ce sont les seuls "rejets" de la pile à combustible.</p>
-      </div>
-    </div>
+        <div id="dragdrop-container">
+            <div class="draggables">
+                <div class="draggable" draggable="true" id="anodedrag">Anode</div>
+                <div class="draggable" draggable="true" id="cathodedrag">Cathode</div>
+                <div class="draggable" draggable="true" id="electrolytedrag">Électrolyte</div>
+            </div>
 
-    <div class="info-card">
-      <h3>Avantages</h3>
-      <p>Silencieuse, propre, haut rendement.</p>
-      <button onclick="toggleCard('avantages')">En savoir plus</button>
-      <div class="hidden-text" id="avantages">
-        <p>Les piles à combustible ne rejettent que de la vapeur d’eau et offrent un rendement supérieur à un moteur thermique.</p>
-      </div>
-    </div>
-  </div>
-
-  <section style="margin-top: 3rem;">
-  <h3>🧩 Associe les composants à leur description</h3>
-  <p>Fais glisser chaque élément à gauche vers la bonne description à droite.</p>
-
-  <div id="dragdrop-container">
-    <div class="draggables">
-      <div class="draggable" draggable="true" id="anode">Anode</div>
-      <div class="draggable" draggable="true" id="cathode">Cathode</div>
-      <div class="draggable" draggable="true" id="electrolyte">Électrolyte</div>
-    </div>
-
-    <div class="dropzones">
-      <div class="dropzone" data-correct="anode">💡 Sépare l’hydrogène en électrons et protons</div>
-      <div class="dropzone" data-correct="cathode">💧 Produit de l’eau et de la chaleur</div>
-      <div class="dropzone" data-correct="electrolyte">🔬 Laisse passer les protons H⁺ uniquement</div>
-    </div>
-  </div>
-  <p id="result-message" style="margin-top: 1em; font-weight: bold;"></p>
-</section>
+            <div class="dropzones">
+                <div class="dropzone" data-correct="anode">💡 Sépare l’hydrogène en électrons et protons</div>
+                <div class="dropzone" data-correct="cathode">💧 Produit de l’eau et de la chaleur</div>
+                <div class="dropzone" data-correct="electrolyte">🔬 Laisse passer les protons H⁺ uniquement</div>
+            </div>
+        </div>
+        <p id="result-message" style="margin-top: 1em; font-weight: bold;"></p>
+    </section>
 
 
-  <a href="home.html" style="margin-top: 2rem; display:inline-block; color: #003333;">⬅ Retour au moteur</a>
+    <a href="home.html" style="margin-top: 2rem; display:inline-block; color: #003333;">⬅ Retour au moteur</a>
 </main>
 
 <footer>
-  <p>&copy; 2025 – Projet Hydrogène | <a href="about.html">À propos</a></p>
+    <p>&copy; 2025 – Projet Hydrogène | <a href="about.html">À propos</a></p>
 </footer>
 
 </body>

@@ -3,7 +3,11 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 80px;
-    background-color: #eaf6fb; 
+    background-color: #eaf6fb;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -55,6 +59,7 @@ nav a {
 
 main {
     padding: 2em;
+    flex: 1;
 }
 
 ul {
@@ -437,6 +442,7 @@ body {
 
 .schemacontained {
     width: 80%;
+    padding-left: 10rem;
 }
 
 .chatbotcontained{
@@ -444,3 +450,7 @@ body {
 
 }
 
+.sketchfab-embed-wrapper{
+    display: flex;
+    justify-content: center;
+}
