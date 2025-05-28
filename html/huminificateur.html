@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Humidificateur</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reformeur.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reformeur.css" />
     <script>
         function toggleReformeur() {
             const content = document.querySelector('.more-info');
@@ -46,8 +46,6 @@
                 <li>⚠️ Doit être bien dimensionné pour éviter la saturation ou le sous-humidification</li>
             </ul>
 
-            <button class="show-button" onclick="toggleReformeur()">+ En savoir plus</button>
-
             <div class="more-info">
                 <p>
                     Les humidificateurs utilisent souvent des membranes échangeuses d’humidité ou des surfaces poreuses permettant un échange thermique et hygrométrique entre l’air humide sortant et l’air sec entrant.
@@ -57,7 +55,10 @@
                 </p>
             </div>
 
-            <a href="motor.html" style="display:inline-block;margin-top:2rem;color:#003333;">⬅ Retour au moteur</a>
+            <div class="button-container">
+                <a href="home.html" class="back-link">⬅ Retour au moteur</a>
+                <button class="show-button" onclick="toggleReformeur()">+ En savoir plus</button>
+            </div>        
         </section>
     </main>
 

@@ -43,6 +43,15 @@ dropzones.forEach(zone => {
   });
 });
 
+function toggleCard(id) {
+  const section = document.getElementById(id);
+  if (section.style.display === 'block') {
+    section.style.display = 'none';
+  } else {
+    section.style.display = 'block';
+  }
+}
+
 function checkAllMatched() {
   const total = dropzones.length;
   let matched = 0;

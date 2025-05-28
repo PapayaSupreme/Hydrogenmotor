@@ -241,6 +241,23 @@ body {
   background-color: #d1f3ff;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.back-link {
+    color: #003333;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
 
 #chat-toggle {
   position: fixed;

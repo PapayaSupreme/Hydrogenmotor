@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Convertisseur DC/DC</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/convertisseur.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/convertisseur.css" />
   <script>
     function toggleDetails() {
       const el = document.querySelector('.more-info');
@@ -45,18 +45,20 @@
       <li>✅ Optimiser le rendement global</li>
     </ul>
 
-    <button class="show-button" onclick="toggleDetails()">+ En savoir plus</button>
-
     <div class="more-info">
       <p>
-        Il existe différents types de convertisseurs DC/DC : buck (abaisse la tension), boost (l’élève), ou buck-boost (fait les deux selon les besoins).
+        Il existe différents types de convertisseurs DC/DC: buck (abaisse la tension), boost (l’élève), ou buck-boost (fait les deux selon les besoins).
       </p>
       <p>
         Dans les voitures à hydrogène, le convertisseur est indispensable pour équilibrer l'énergie entre la pile, la batterie tampon et les moteurs.
       </p>
     </div>
 
-    <a href="motor.html" style="display:inline-block;margin-top:2rem;color:#003333;">⬅ Retour au moteur</a>
+    <div class="button-container">
+      <a href="home.html" class="back-link">⬅ Retour au moteur</a>
+      <button class="show-button" onclick="toggleDetails()">+ En savoir plus</button>
+    </div>
+
   </section>
 </main>
 
