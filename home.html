@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hydrogen Motor</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil – Moteur à Hydrogène</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Hydrogen motor</h1>
+    <h1>Hydrogen Motor</h1>
     <nav>
       <a href="home.html">Home</a>
       <a href="motor.html">Usage exemple</a>
@@ -19,48 +19,72 @@
   </header>
 
   <main>
-    <h2>Cliquez sur une partie du moteur</h2>
-    <div class="engine-image">
-      <svg viewBox="0 0 1083 768" width="100%" height="auto">
-        <image href="assets/img/motor_img.jpg" width="1083" height="768" />
+    <section class="hero-section">
+      <h2>🚗 Bienvenue dans le futur de la mobilité</h2>
+      <p>
+        Découvrez le fonctionnement d’un moteur à hydrogène à travers une interface interactive et pédagogique.
+      </p>
+      <a href="#moteur" class="cta-button">🔍 Explorer le moteur</a>
+    </section>
 
-        <!-- Zone : Pile à combustible -->
-        <a xlink:href="pile.html">
-          <rect x="400" y="190" width="250" height="170" class="zone" />
-        </a>
+    <section class="overview-section">
+      <h3>Pourquoi choisir l’hydrogène ?</h3>
+      <p>
+        L'hydrogène est une alternative propre et durable aux carburants fossiles. Il ne produit que de la vapeur d’eau,
+        permet une autonomie compétitive, et alimente des véhicules silencieux à haut rendement.
+      </p>
+    </section>
 
-        <!-- Zone : Réformeur -->
-        <a xlink:href="reformeur.html">
-          <circle cx="885" cy="525" r="50" class="zone" />
-        </a>
+    <!-- Moteur interactif -->
+    <section class="engine-section" id="moteur">
+      <h2>🧩 Cliquez sur une partie du moteur</h2>
+      <div class="engine-image">
+        <svg viewBox="0 0 1083 768" width="100%" height="auto">
+          <image href="assets/img/motor_img.jpg" width="1083" height="768" />
 
-        <!-- Zone : Humidificateur -->
-        <a xlink:href="huminificateur.html">
-          <rect x="710" y="330" width="170" height="120" class="zone" />
-        </a>
+          <!-- Zone : Pile à combustible -->
+          <a xlink:href="pile.html">
+            <rect x="400" y="190" width="250" height="170" class="zone" />
+          </a>
 
-        <!-- Zone : Convertisseur -->
-        <a xlink:href="convertisseur.html">
-          <rect x="250" y="150" width="140" height="90" class="zone" />
-        </a>
-      </svg>
-    </div>
+          <!-- Zone : Réformeur -->
+          <a xlink:href="reformeur.html">
+            <circle cx="885" cy="525" r="50" class="zone" />
+          </a>
+
+          <!-- Zone : Humidificateur -->
+          <a xlink:href="huminificateur.html">
+            <rect x="710" y="330" width="170" height="120" class="zone" />
+          </a>
+
+          <!-- Zone : Convertisseur -->
+          <a xlink:href="convertisseur.html">
+            <rect x="250" y="150" width="140" height="90" class="zone" />
+          </a>
+        </svg>
+      </div>
+    </section>
   </main>
-  <script src="js/chatbot.js"></script>
 
-  <div id="chatbot-container">
+  <!-- Chatbot -->
+  <script src="js/chatbot.js"></script>
+  <button id="chat-toggle" onclick="toggleChatbox()">💬</button>
+
+  <div id="chatbot-container" class="hidden">
     <div id="chatbox">
       <div id="chat-messages"></div>
       <input type="text" id="user-input" placeholder="Posez votre question..." />
       <button onclick="sendMessage()">Envoyer</button>
     </div>
   </div>
+  <div id="arrow-hint">⬅ Cliquez ici pour parler au bot !</div>
+
+
   <footer>
     <p>&copy; 2025 - Projet Moteur à Hydrogène | <a href="about.html">À propos</a></p>
   </footer>
 
+  <img src="assets/img/car-icon.png" alt="Voiture animée" class="background-car" />
 
 </body>
-<img src="assets/img/car-icon.png" alt="Voiture animée" class="background-car">
-
 </html>

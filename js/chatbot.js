@@ -49,3 +49,15 @@ function sendMessage() {
             if (typingMsg) typingMsg.textContent = "❌ Error getting response.";
         });
 }
+
+function toggleChatbox() {
+  const chatbot = document.getElementById('chatbot-container');
+  const toggleBtn = document.getElementById('chat-toggle');
+  const arrow = document.getElementById('arrow-hint');
+
+  chatbot.classList.toggle('hidden');
+
+  toggleBtn.textContent = chatbot.classList.contains('hidden') ? '💬' : '❌';
+  if (arrow) arrow.style.display = 'none';
+}
+
