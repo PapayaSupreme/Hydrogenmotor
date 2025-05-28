@@ -14,7 +14,10 @@ Educational web platform about hydrogen engines with integrated chatbot. The sit
 
 ## 🚀 Installation and Launch
 
-### Simple Method (Recommended)
+### Default Method (Without Chatbot)
+Simply open `home.html` in your browser to access all features except the chatbot.
+
+### Complete Method (With ChatBot - Recommended)
 1. Double-click on `setup_and_launch.bat`
 2. Follow on-screen instructions
 3. Enter your OpenRouter API key when prompted
