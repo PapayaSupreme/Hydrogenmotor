@@ -1,89 +1,89 @@
-# 🚗 Hydrogen Motor - Site Web Éducatif
+# 🚗 Hydrogen Motor - Educational Website
 
 ## 📝 Description
-Plateforme web éducative sur les moteurs à hydrogène avec chatbot intégré. Le site propose :
-- Interface interactive du moteur à hydrogène
-- Chatbot spécialisé (modèle Qwen)
-- Calculateur de consommation
-- Jeux éducatifs sur la pile à combustible
+Educational web platform about hydrogen engines with integrated chatbot. The site offers:
+- Interactive hydrogen engine interface
+- Specialized Chatbot (Qwen model)
+- Consumption calculator
+- Educational games about fuel cells
 
-## 🛠️ Prérequis
-- Node.js v18.19.1 ou supérieur
-- Clé API OpenRouter (pour le chatbot)
-- Navigateur web moderne
+## 🛠️ Prerequisites
+- Node.js v18.19.1 or higher
+- OpenRouter API key (for chatbot)
+- Modern web browser
 
-## 🚀 Installation et Lancement
+## 🚀 Installation and Launch
 
-### Méthode Simple (Recommandée)
-1. Double-cliquez sur `setup_and_launch.bat`
-2. Suivez les instructions à l'écran
-3. Entrez votre clé API OpenRouter si demandé
+### Simple Method (Recommended)
+1. Double-click on `setup_and_launch.bat`
+2. Follow on-screen instructions
+3. Enter your OpenRouter API key when prompted
 
-### Méthode Manuelle
+### Manual Method
 ```bash
-# Installez les dépendances
+# Install dependencies
 npm install express cors axios dotenv
 
-# Créez un fichier .env avec votre clé
-echo OPENROUTER_API_KEY=votre-clé-api > .env
+# Create .env file with your key
+echo OPENROUTER_API_KEY=your-api-key > .env
 
-# Lancez le serveur
+# Launch server
 node js/server.js
 ```
 
-## 📋 Fonctionnalités
+## 📋 Features
 
-### 🤖 Chatbot Intelligent (Qwen)
-- Assistance en temps réel
-- Spécialisé dans les moteurs à hydrogène
-- Interface intuitive
+### 🤖 Intelligent Chatbot (Qwen)
+- Real-time assistance
+- Specialized in hydrogen engines
+- Intuitive interface
 
-### 🔄 Moteur Interactif
-- Visualisation des composants
-- Zones cliquables
-- Explications détaillées
+### 🔄 Interactive Engine
+- Component visualization
+- Clickable areas
+- Detailed explanations
 
-### 📊 Calculateur de Consommation
-- Comparaison essence vs hydrogène
-- Estimation des coûts
-- Profils de véhicules personnalisés
+### 📊 Consumption Calculator
+- Gasoline vs hydrogen comparison
+- Cost estimation
+- Custom vehicle profiles
 
-### 🎮 Section Éducative
-- Jeu drag & drop
-- Fiches explicatives
-- Contenu pédagogique
+### 🎮 Educational Section
+- Drag & drop game
+- Explanation cards
+- Educational content
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 ```
 Hydrogen_Motor/
 ├── assets/
-│   └── img/           # Images et ressources
+│   └── img/           # Images and resources
 ├── css/              # Styles
 ├── js/               # Scripts
-│   ├── server.js     # Backend du chatbot
-│   ├── chatbot.js    # Interface du chatbot
-│   └── calculator.js # Logique du calculateur
-├── *.html           # Pages du site
-└── setup_and_launch.bat # Script de lancement
+│   ├── server.js     # Chatbot backend
+│   ├── chatbot.js    # Chatbot interface
+│   └── calculator.js # Calculator logic
+├── *.html           # Site pages
+└── setup_and_launch.bat # Launch script
 ```
 
-## 🔧 Technologies Utilisées
-- Frontend : HTML5, CSS3, JavaScript
-- Backend : Node.js, Express
-- API : OpenRouter (modèle Qwen)
-- Dépendances : axios, cors, dotenv
+## 🔧 Technologies Used
+- Frontend: HTML5, CSS3, JavaScript
+- Backend: Node.js, Express
+- API: OpenRouter (Qwen model)
+- Dependencies: axios, cors, dotenv
 
-## 👥 Auteurs
+## 👥 Authors
 - Marcel Brian
 - Pablo Ferrera
 
-## 📄 Licence
-© 2025 EFREI Paris - Tous droits réservés
+## 📄 License
+© 2025 EFREI Paris - All rights reserved
 
-## 🤝 Contribution
-Les contributions sont bienvenues ! Pour contribuer :
-1. Forkez le projet
-2. Créez une branche (`git checkout -b feature/NouvelleFeature`)
-3. Committez vos changements (`git commit -m 'Ajout de feature'`)
-4. Pushez vers la branche (`git push origin feature/NouvelleFeature`)
-5. Ouvrez une Pull Request
+## 🤝 Contributing
+Contributions are welcome! To contribute:
+1. Fork the project
+2. Create a branch (`git checkout -b feature/NewFeature`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature/NewFeature`)
+5. Open a Pull Request
