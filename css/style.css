@@ -391,14 +391,15 @@ body {
 
 #arrow-hint {
   position: fixed;
-  bottom: 100px;        /* Ajusté plus haut pour pointer vers le bouton */
+  bottom: 13rem;        /* Ajusté plus haut pour pointer vers le bouton */
   right: 45px;         /* Centré avec le bouton de chat */
   font-size: 1.2rem;
   color: #ff4d4d;
   font-weight: bold;
   animation: blink 1s infinite;
   z-index: 1002;
-  transform: rotate(90deg);  /* Rotation à 90 degrés pour pointer vers le bas */
+    transform: translateX(50%) rotate(-90deg);
+    /* Rotation à 90 degrés pour pointer vers le bas */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   white-space: nowrap;
   pointer-events: none;
@@ -412,3 +413,17 @@ body {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
+
+.container-schema {
+    display: flex;
+}
+
+.schemacontained {
+    width: 80%;
+}
+
+.chatbotcontained{
+    width: 10%;
+
+}
+
